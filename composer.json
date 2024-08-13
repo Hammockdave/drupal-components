@@ -1,0 +1,6 @@
+{
+  "name": "hammockdave/drupal-components",
+  "description": "Drupal components",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later"
+}
