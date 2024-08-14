@@ -19,6 +19,27 @@ function drupal_components_theme($existing, $type, $theme, $path) {
       'template' => 'blocks/block--topheaderaddresssocial',
       'base hook' => 'block'
     ],
+    'footer_contact_block' => [
+      'variables' => [
+        'extended_business_name' => NULL,
+        'full_business_name' => NULL,
+        'short_business_name' => NULL,
+        'business_address_1' => NULL,
+        'business_address_2' => NULL,
+        'business_email' => NULL,
+        'business_phone' => NULL,
+      ],
+      'template' => 'blocks/block--footer-contact-block'
+    ],
+    'custom_logo_block' => [
+      'variables' => [
+        'site_name' => NULL,
+        'site_slogan' => NULL,
+        'logo_image_solid' => NULL,
+        'logo_image_trans' => NULL,
+      ],
+      'template' => 'blocks/block--custom-logo-block'
+    ]
   ];
 }
 
