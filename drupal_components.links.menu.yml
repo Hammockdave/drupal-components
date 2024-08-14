@@ -1,0 +1,7 @@
+drupal_components.business_settings_form:
+  title: 'Business Settings'
+  route_name: drupal_components.business_settings_form
+  description: 'Business Settings'
+  parent: system.admin_config_system
+  weight: 99
+

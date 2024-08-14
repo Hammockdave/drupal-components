@@ -19,49 +19,42 @@ class BusinessSettingsForm extends ConfigFormBase {
     $form['extended_business_name'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Extended Business Name'),
-      '#required' => TRUE,
       '#default_value' => $config->get('extended_business_name'),
     ];
 
     $form['full_business_name'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Full Business Name'),
-      '#required' => TRUE,
-      '#default_value' => $config->get('full_business_name'),
+      '#default_value' => $config->get('full_business_name') ?? '',
     ];
 
     $form['short_business_name'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Short Business Name'),
-      '#required' => TRUE,
-      '#default_value' => $config->get('short_business_name'),
+      '#default_value' => $config->get('short_business_name') ?? '',
     ];
 
     $form['business_address_1'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Business Address 1'),
-      '#required' => TRUE,
-      '#default_value' => $config->get('business_address_1'),
+      '#default_value' => $config->get('business_address_1') ?? '',
     ];
 
     $form['business_address_2'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Business Address 2'),
-      '#required' => TRUE,
-      '#default_value' => $config->get('business_address_2'),
+      '#default_value' => $config->get('business_address_2') ?? '',
     ];
 
     $form['business_email'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Business Email'),
-      '#required' => TRUE,
       '#default_value' => $config->get('business_email'),
     ];
 
     $form['business_phone'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Business Phone'),
-      '#required' => TRUE,
       '#default_value' => $config->get('business_phone'),
     ];
 
