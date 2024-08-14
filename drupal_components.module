@@ -13,8 +13,22 @@ function drupal_components_theme($existing, $type, $theme, $path) {
       'variables' => ['data' => NULL],
       'template' => 'paragraphs/paragraph--hero-video',
       'base hook' => 'paragraph'
-    ]
+    ],
+    'block__topheaderaddresssocial' => [
+      'variables' => ['data' => NULL],
+      'template' => 'blocks/block--topheaderaddresssocial',
+      'base hook' => 'block'
+    ],
   ];
+}
+
+// Preprocess Block
+function drupal_components_preprocess_block__topheaderaddresssocial(&$variables) {
+  $nestbend_config = \Drupal::service('config.factory')->get('drupal_components.settings');
+  $variables['extended_name'] = $nestbend_config->get('extended_business_name');
+  $variables['address_1'] = $nestbend_config->get('business_address_1');
+  $variables['address_2'] = $nestbend_config->get('business_address_2');
+  $variables['business_phone'] = $nestbend_config->get('business_phone');
 }
 
 /**
