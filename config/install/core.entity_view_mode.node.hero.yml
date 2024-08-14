@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LY7gcvWHL6kOOrcJXd-ucrv2v0PoD_XqgHhQ5T0ILvY
+id: node.hero
+label: Hero
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,12 @@
+name: Custom Drupal Components
+type: module
+description: 'Custom module for Components / Paragraphs, etc.'
+package: Webazzle
+core_version_requirement: "^9 || ^10.0"
+version: "1.0"
+
+dependencies:
+  - drupal:paragraphs
+  - drupal:ctools
+  - drupal:media
+  - drupal:media_library

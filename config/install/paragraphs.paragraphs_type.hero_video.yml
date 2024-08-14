@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_video
+label: 'Hero Video'
+icon_uuid: null
+icon_default: null
+description: 'Use <i>Hero Video</i> as a main header for pages'
+behavior_plugins: {  }
